@@ -1,0 +1,18 @@
+<table border="1">
+    <caption>My todo's</caption>
+    <thead>
+        <tr>
+            <th>Description</th>
+            <th>Date</th>
+            <th>Yield</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- <for (Todo todo : todos) {} -->
+        <tr *ngFor="let todo of todos">
+            <td>{{todo.description}}</td>
+            <td>{{todo.targetDate | date}}</td>
+            <td>{{todo.gain}}</td>
+        </tr>
+    </tbody>
+</table>
